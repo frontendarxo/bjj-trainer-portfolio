@@ -952,13 +952,13 @@ export function ImamPortfolio() {
           </div>
 
           <Reveal delay={0.12} y={48}>
-            <div className="relative min-h-[560px] overflow-hidden bg-graphite">
+            <div className="relative aspect-[2/3] w-full overflow-hidden bg-graphite">
               <Image
                 src={imagePaths.training}
                 alt="Imam Getsiev in a training environment"
                 fill
                 sizes="(min-width: 1024px) 42vw, 100vw"
-                className="object-cover object-[47%_50%]"
+                className="object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
