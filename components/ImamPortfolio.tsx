@@ -660,7 +660,7 @@ export function ImamPortfolio() {
     );
 
   return (
-    <main className="grain bg-ink text-bone">
+    <main className="grain overflow-x-clip bg-ink text-bone">
       <IntroLoader visible={introVisible} />
       <Navigation
         links={navLinks}
@@ -705,7 +705,7 @@ export function ImamPortfolio() {
                 <TitleReveal delay={0.24}>{t.hero.titleBottom}</TitleReveal>
                 <motion.span
                   aria-hidden
-                  className="purple-line absolute bottom-1 left-1 h-2 w-[64%] origin-left md:h-3"
+                  className="purple-line absolute -bottom-2 left-0 h-1.5 w-[74%] origin-left sm:bottom-0 sm:left-1 sm:h-2 sm:w-[64%] md:h-3"
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
                   transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 1.18 }}
@@ -738,7 +738,7 @@ export function ImamPortfolio() {
       </section>
 
       <div className="masked-row border-y border-bone/10 py-4">
-        <div className="flex w-max animate-ticker gap-10 whitespace-nowrap font-display text-2xl font-black uppercase text-bone/80 md:text-4xl">
+        <div className="flex w-max animate-ticker gap-10 whitespace-nowrap font-display text-2xl font-black uppercase text-bone/80 will-change-transform md:text-4xl">
           {Array.from({ length: 4 }).map((_, index) => (
             <span key={index}>{tickerText}</span>
           ))}
